@@ -1,0 +1,91 @@
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div style="position: relative; display: inline-block">
+    <div
+      style="
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+      "
+    >
+      <div
+        style="
+          position: relative;
+          height: 30px;
+          width: 100%;
+          display: flex;
+          justify-content: end;
+        "
+      >
+        <div
+          id="playerHealth"
+          style="
+            background-color: green;
+            height: 30px;
+            width: 100%;
+            position: absolute;
+          "
+        ></div>
+        <div style="height: 30px; width: 100%; background-color: red"></div>
+      </div>
+
+      <div
+        id="timer"
+        style="
+          pointer-events: none;
+          background-color: purple;
+          height: 80px;
+          width: 48px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        90
+      </div>
+      <div style="height: 30px; width: 100%; position: relative">
+        <div
+          id="enemyHealth"
+          style="
+            background-color: green;
+            height: 30px;
+            width: 100%;
+            position: absolute;
+          "
+        ></div>
+        <div style="background-color: red; height: 30px; width: 100%"></div>
+      </div>
+    </div>
+    <div
+      id="displayText"
+      style="
+        pointer-events: none;
+        font-size: xx-large;
+        position: absolute;
+        color: aliceblue;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      "
+    >
+      TIE
+    </div>
+    <canvas></canvas>
+  </div>
+  
+  <script src="textClasses.js"></script>
+  <script src="test.js"></script>
+</body>
